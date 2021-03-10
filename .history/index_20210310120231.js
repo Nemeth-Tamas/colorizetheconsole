@@ -101,19 +101,11 @@ function colorizer(color) {
 
 /**
  * 
- * @param {string} mode can be ["fg", "bg", "warn", "log", "error", "server", "misc"]
+ * @param {string} mode can be ["fg", "bg", "warn", "log", "error", "server"]
  * @param {*} value can be a color ["Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White", "Reset", "Bright", "Dim", "Underscore", "Blink", "Reverse", "Hidden"]
- * @example 
- * colorizerv2("fg", "red")
- * colorizerv2("bg", "green")
- * colorizerv2("misc", "reset")
- * colorizerv2("log")
- * 
  */
 function colorizerv2(mode = "fg", value = "reset") {
-    mode = mode.toLowerCase();
-    value = value.toLowerCase();
-    let Modes = {
+    let colorsAndModes = {
         reset: "\x1b[0m",
         bright: "\x1b[1m",
         dim: "\x1b[2m",
@@ -122,56 +114,7 @@ function colorizerv2(mode = "fg", value = "reset") {
         reverse: "\x1b[7m",
         hidden: "\x1b[8m",
     }
-
-    let BackgroundColors = {
-        black: "\x1b[40m",
-        red: "\x1b[41m",
-        green: "\x1b[42m",
-        yellow: "\x1b[43m",
-        blue: "\x1b[44m",
-        magenta: "\x1b[45m",
-        cyan: "\x1b[46m",
-        white: "\x1b[47m",
-    }
-
-    let ForegroundColors = {
-        black: "\x1b[30m",
-        red: "\x1b[31m",
-        green: "\x1b[32m",
-        yellow: "\x1b[33m",
-        blue: "\x1b[34m",
-        magenta: "\x1b[35m",
-        cyan: "\x1b[36m",
-        white: "\x1b[37m",
-    }
-
-    if (mode === "misc") {
-        return Modes[value];
-    }
-
-    if (mode === 'bg') {
-        return BackgroundColors[value];
-    }
-
-    if (mode === 'fg') {
-        return ForegroundColors[value];
-    }
-
-    if (mode === 'log') {
-        return `${ForegroundColors['blue']}[LOG] ${Modes["reset"]}`
-    }
-
-    if (mode === 'server') {
-        return `${ForegroundColors['magenta']}[SERVER] ${Modes["reset"]}`
-    }
-
-    if (mode === 'warn') {
-        return `${ForegroundColors['yellow']}[SERVER] ${Modes["reset"]}`
-    }
-
-    if (mode === 'error') {
-        return `${ForegroundColors['red']}[SERVER] ${Modes["reset"]}`
-    }
+    return colorsAndModes[]
 }
 
 module.exports = { colorizer, colorizerv2 };

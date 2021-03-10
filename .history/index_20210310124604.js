@@ -103,12 +103,10 @@ function colorizer(color) {
  * 
  * @param {string} mode can be ["fg", "bg", "warn", "log", "error", "server", "misc"]
  * @param {*} value can be a color ["Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White", "Reset", "Bright", "Dim", "Underscore", "Blink", "Reverse", "Hidden"]
- * @example 
- * colorizerv2("fg", "red")
- * colorizerv2("bg", "green")
- * colorizerv2("misc", "reset")
- * colorizerv2("log")
- * 
+  * Solves equations of the form a * x = b
+ * @example <caption>Example usage of method1.</caption>
+ * // returns 2
+ * globalNS.method1(5, 10);
  */
 function colorizerv2(mode = "fg", value = "reset") {
     mode = mode.toLowerCase();

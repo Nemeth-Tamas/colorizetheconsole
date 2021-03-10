@@ -103,12 +103,6 @@ function colorizer(color) {
  * 
  * @param {string} mode can be ["fg", "bg", "warn", "log", "error", "server", "misc"]
  * @param {*} value can be a color ["Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White", "Reset", "Bright", "Dim", "Underscore", "Blink", "Reverse", "Hidden"]
- * @example 
- * colorizerv2("fg", "red")
- * colorizerv2("bg", "green")
- * colorizerv2("misc", "reset")
- * colorizerv2("log")
- * 
  */
 function colorizerv2(mode = "fg", value = "reset") {
     mode = mode.toLowerCase();
@@ -158,19 +152,11 @@ function colorizerv2(mode = "fg", value = "reset") {
     }
 
     if (mode === 'log') {
-        return `${ForegroundColors['blue']}[LOG] ${Modes["reset"]}`
+        return `\x1b[34m[LOG] ${Modes["reset"]}`
     }
 
     if (mode === 'server') {
-        return `${ForegroundColors['magenta']}[SERVER] ${Modes["reset"]}`
-    }
-
-    if (mode === 'warn') {
-        return `${ForegroundColors['yellow']}[SERVER] ${Modes["reset"]}`
-    }
-
-    if (mode === 'error') {
-        return `${ForegroundColors['red']}[SERVER] ${Modes["reset"]}`
+        return `${ForegroundColors[value]}[SERVER] ${Modes["reset"]}`
     }
 }
 

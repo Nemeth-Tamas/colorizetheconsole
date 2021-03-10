@@ -107,7 +107,6 @@ function colorizer(color) {
  * colorizerv2("fg", "red")
  * colorizerv2("bg", "green")
  * colorizerv2("misc", "reset")
- * colorizerv2("log")
  * 
  */
 function colorizerv2(mode = "fg", value = "reset") {
