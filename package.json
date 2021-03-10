@@ -1,0 +1,39 @@
+{
+  "_from": "colorizetheconsole",
+  "_id": "colorizetheconsole@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ZQuB4e9MviWIKeTuEVmS4lyjlRpn0IdjdE3J4YUIHUbiavrapbYwmonCo5Uq0tU1643Ln1VC46d/WvRxjUrXwQ==",
+  "_location": "/colorizetheconsole",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "colorizetheconsole",
+    "name": "colorizetheconsole",
+    "escapedName": "colorizetheconsole",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/colorizetheconsole/-/colorizetheconsole-1.0.0.tgz",
+  "_shasum": "16f88b4682cdd9a6fa0e0799a25d7d698ac86ab4",
+  "_spec": "colorizetheconsole",
+  "_where": "D:\\Felhasznalok\\User\\Dokumentumok\\prog_projektek\\colorizetheconsole",
+  "author": {
+    "name": "Németh Tamás"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This script will add color to your console.",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "colorizetheconsole",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
