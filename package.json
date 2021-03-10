@@ -32,8 +32,6 @@
   "license": "ISC",
   "main": "index.js",
   "name": "colorizetheconsole",
-  "scripts": {
-    
-  },
-  "version": "1.0.0"
+  "scripts": {},
+  "version": "1.0.1"
 }
